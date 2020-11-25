@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Expedia">
+
+	<test name="Regression Tests" preserve-order="true">
+		<parameter name="Email" value="e.bhuvaneswari7@gmail.com"></parameter>
+		<parameter name="Password" value="Expe"></parameter>
+		<classes>
+			
+			<class name="testCases.StaysSearch"></class>
+			<class name="testCases.FlightsSearch"></class>
+			<class name="testCases.Packages"></class>
+			<class name="testCases.PackagesSearch"></class>
+			<class name="testCases.LoginInValid"></class>
+			
+			
+
+		</classes>
+	</test>
+
+</suite>

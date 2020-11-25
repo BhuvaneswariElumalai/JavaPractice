@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Expedia]">
+  <test thread-count="5" name="Regression Tests(failed)">
+    <parameter name="Email" value="e.bhuvaneswari7@gmail.com"/>
+    <parameter name="Password" value="Expe"/>
+    <classes>
+      <class name="testCases.Packages">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="packagesSearch"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testCases.Packages -->
+      <class name="testCases.StaysSearch">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="staysSearch"/>
+          <include name="cleanUp"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.StaysSearch -->
+      <class name="testCases.LoginInValid">
+        <methods>
+          <include name="loginValid"/>
+          <include name="launchBrowser"/>
+          <include name="cleanUp"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginInValid -->
+      <class name="testCases.PackagesSearch">
+        <methods>
+          <include name="packagesSerachValid"/>
+          <include name="launchBrowser"/>
+          <include name="cleanUp"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.PackagesSearch -->
+      <class name="testCases.FlightsSearch">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="cleanUp"/>
+          <include name="tearDown"/>
+          <include name="flightsSearch"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.FlightsSearch -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [Expedia] -->

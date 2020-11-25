@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testCases.FlightsSearch">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="cleanUp"/>
+          <include name="tearDown"/>
+          <include name="flightsSearch"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.FlightsSearch -->
+      <class name="testCases.Packages">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="packagesSearch"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testCases.Packages -->
+      <class name="testCases.LoginInValid">
+        <methods>
+          <include name="loginValid"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginInValid -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
