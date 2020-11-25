@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class PageObjectsFlightSearch {
 
+	//***************//
 	
 	@FindBy(xpath="//div[@class='global-nav-header-links__item uitk-cell all-cell-shrink all-x-padding-four all-y-padding-three']//a[@href='/Flights']")
 	public static WebElement flightsTab;
